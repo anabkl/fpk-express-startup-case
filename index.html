@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FPK-EXPRESS — dossier entrepreneurial interactif consacré à la précommande et au retrait rapide de snacks à la FPK Khouribga."
+    />
+    <meta name="theme-color" content="#10223a" />
+    <title>FPK-EXPRESS — Dossier Entrepreneurial Interactif</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path>
+      </symbol>
+      <symbol id="icon-bag" viewBox="0 0 24 24">
+        <path d="M5 8h14l-1 12H6L5 8Z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
+      </symbol>
+      <symbol id="icon-eye" viewBox="0 0 24 24">
+        <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"></path><circle cx="12" cy="12" r="2.5"></circle>
+      </symbol>
+      <symbol id="icon-store" viewBox="0 0 24 24">
+        <path d="M4 10v10h16V10"></path><path d="M3 4h18l-2 6H5L3 4Z"></path><path d="M9 20v-6h6v6"></path>
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <rect x="7" y="2" width="10" height="20" rx="2"></rect><path d="M10 5h4M11 19h2"></path>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle><path d="m8 12 2.5 2.5L16 9"></path>
+      </symbol>
+      <symbol id="icon-chart" viewBox="0 0 24 24">
+        <path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path>
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 3 4 6v5c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6l-8-3Z"></path><path d="m8.5 12 2.2 2.2 4.8-5"></path>
+      </symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24">
+        <circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="9" r="2"></circle><path d="M3 20c.3-4 2.3-6 6-6s5.7 2 6 6M15 15c3 0 5 1.7 5.5 5"></path>
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14M14 7l5 5-5 5"></path>
+      </symbol>
+      <symbol id="icon-print" viewBox="0 0 24 24">
+        <path d="M7 8V3h10v5M7 17H4V9h16v8h-3M7 14h10v7H7z"></path>
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path d="M20 15.5A8 8 0 0 1 8.5 4 8.5 8.5 0 1 0 20 15.5Z"></path>
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+      </symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"></path></symbol>
+    </svg>
+
+    <header class="site-header" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="#home" aria-label="FPK-EXPRESS, retour à l’accueil">
+          <img src="assets/logo-mark.svg" alt="" width="38" height="38" />
+          <span><strong>FPK-EXPRESS</strong><small>Dossier entrepreneurial</small></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navigation principale">
+          <a href="#home">Accueil</a><a href="#problem">Le problème</a><a href="#solution">Notre solution</a>
+          <a href="#validation">Validation</a><a href="#business-model">Business Model Canvas</a>
+          <a href="#feasibility">Faisabilité</a><a href="#swot">SWOT</a><a href="#pestel">PESTEL</a>
+          <a href="#marketing">Marketing 4P</a><a href="#roadmap">Roadmap</a><a href="#team">Équipe</a>
+          <a href="#risks">Risques</a><a href="#prototype">Prototype MVP</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-button theme-toggle" type="button" aria-label="Activer le mode sombre" title="Changer de thème">
+            <svg class="icon theme-icon-moon"><use href="#icon-moon"></use></svg>
+            <svg class="icon theme-icon-sun"><use href="#icon-sun"></use></svg>
+          </button>
+          <button class="icon-button menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="icon menu-icon"><use href="#icon-menu"></use></svg>
+            <svg class="icon close-icon"><use href="#icon-close"></use></svg>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Navigation mobile" hidden>
+        <a href="#home">Accueil</a><a href="#problem">Le problème</a><a href="#solution">Notre solution</a>
+        <a href="#validation">Validation</a><a href="#business-model">Business Model Canvas</a>
+        <a href="#feasibility">Faisabilité</a><a href="#swot">SWOT</a><a href="#pestel">PESTEL</a>
+        <a href="#marketing">Marketing 4P</a><a href="#roadmap">Roadmap</a><a href="#team">Équipe</a>
+        <a href="#risks">Risques</a><a href="#prototype">Prototype MVP</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-anchor" id="home">
+        <img class="hero-visual" src="assets/hero-network.svg" alt="Schéma abstrait reliant étudiant, plateforme et snack partenaire" />
+        <div class="hero-overlay"></div>
+        <div class="page-shell hero-content reveal">
+          <span class="eyebrow light">MVP Académique • FPK Khouribga</span>
+          <p class="hero-kicker">Dossier Entrepreneurial Interactif</p>
+          <h1>FPK-EXPRESS</h1>
+          <h2>Précommander. Retirer. Gagner du temps.</h2>
+          <p class="hero-description">
+            FPK-EXPRESS est une plateforme numérique d’intermédiation qui facilite la précommande et le retrait rapide
+            de snacks pour les étudiants de la FPK Khouribga.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#problem">Explorer le dossier <svg class="icon"><use href="#icon-arrow"></use></svg></a>
+            <!-- Edit the MVP URL in script.js. -->
+            <a class="button ghost-light" href="#" data-mvp-link target="_blank" rel="noopener">Voir le prototype MVP</a>
+            <button class="button print-button" type="button"><svg class="icon"><use href="#icon-print"></use></svg> Imprimer / Enregistrer en PDF</button>
+          </div>
+          <div class="benefit-chips" aria-label="Bénéfices principaux">
+            <span>Sans livraison</span><span>Retrait rapide chez le snack partenaire</span><span>Frais de service transparents</span>
+          </div>
+        </div>
+        <div class="hero-status reveal" aria-hidden="true">
+          <span class="status-dot"></span><strong>Commande prête</strong><small>Retrait chez le partenaire</small>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="problem">
+        <div class="page-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Le problème</span>
+            <h2>Un problème quotidien sur le campus</h2>
+            <p>Les étudiants disposent souvent de pauses courtes et perdent un temps important dans les files d’attente devant les snacks et points de restauration. Cette situation peut entraîner du stress, des retards et des repas sautés ou peu équilibrés.</p>
+          </div>
+          <div class="three-grid">
+            <article class="feature-card reveal"><span class="icon-box"><svg class="icon"><use href="#icon-clock"></use></svg></span><strong>01</strong><h3>Temps perdu</h3><p>Des minutes précieuses disparaissent dans les files d’attente au lieu d’être consacrées à la pause.</p></article>
+            <article class="feature-card reveal"><span class="icon-box"><svg class="icon"><use href="#icon-bag"></use></svg></span><strong>02</strong><h3>Pauses insuffisantes</h3><p>Commander, attendre et manger devient difficile entre deux cours ou travaux dirigés.</p></article>
+            <article class="feature-card reveal"><span class="icon-box"><svg class="icon"><use href="#icon-eye"></use></svg></span><strong>03</strong><h3>Visibilité limitée</h3><p>Les produits disponibles, les prix et les délais sont rarement connus avant l’arrivée au snack.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section validation-band section-anchor" id="validation">
+        <div class="page-shell validation-layout">
+          <div class="section-heading compact reveal">
+            <span class="eyebrow light">Validation terrain</span>
+            <h2>Enquête terrain interne — échantillon exploratoire</h2>
+            <p>Des indicateurs concrets confirment l’intérêt d’un parcours plus rapide, plus lisible et adapté au rythme de la FPK.</p>
+          </div>
+          <div class="stats-grid">
+            <article class="stat reveal"><strong>23</strong><span>étudiants interrogés</span></article>
+            <article class="stat reveal"><strong>+81 %</strong><span>attendent au moins 15 minutes</span></article>
+            <article class="stat reveal"><strong>≈95 %</strong><span>mangent parfois mal ou sautent un repas</span></article>
+            <article class="stat reveal"><strong>100 %</strong><span>intéressés par la précommande</span></article>
+            <article class="stat reveal"><strong>66,7 %</strong><span>accepteraient 1 à 2 MAD de frais</span></article>
+          </div>
+          <p class="disclaimer light reveal">Ces résultats constituent une validation exploratoire interne et non une étude statistiquement représentative.</p>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="solution">
+        <div class="page-shell">
+          <div class="section-heading reveal"><span class="eyebrow">Notre solution</span><h2>Commander avant, retirer sans attendre</h2><p>Un parcours court qui coordonne l’étudiant et le snack partenaire sans ajouter de livraison ni d’infrastructure alimentaire.</p></div>
+          <ol class="process-flow">
+            <li class="reveal"><span>1</span><svg class="icon"><use href="#icon-phone"></use></svg><p>L’étudiant consulte les snacks et produits disponibles.</p></li>
+            <li class="reveal"><span>2</span><svg class="icon"><use href="#icon-clock"></use></svg><p>Il choisit un produit et un créneau de retrait.</p></li>
+            <li class="reveal"><span>3</span><svg class="icon"><use href="#icon-store"></use></svg><p>Le snack partenaire reçoit la commande.</p></li>
+            <li class="reveal"><span>4</span><svg class="icon"><use href="#icon-bag"></use></svg><p>Le snack prépare la commande.</p></li>
+            <li class="reveal"><span>5</span><svg class="icon"><use href="#icon-check"></use></svg><p>L’étudiant récupère directement sa commande.</p></li>
+          </ol>
+          <div class="solution-notes">
+            <article class="highlight-card reveal"><span class="icon-box"><svg class="icon"><use href="#icon-shield"></use></svg></span><div><h3>FPK-EXPRESS est un intermédiaire numérique</h3><p>La plateforme ne prépare pas les produits, ne livre pas les commandes et ne gère pas le stock alimentaire. Les snacks partenaires restent responsables de la préparation, de l’hygiène, du prix affiché, de la disponibilité et de la remise des produits.</p></div></article>
+            <article class="note-card reveal"><h3>Pourquoi ce modèle est adapté au campus ?</h3><p>Le modèle permet de tester une solution légère, rapide à déployer et centrée sur le gain de temps des étudiants, sans nécessiter une flotte de livraison ou une infrastructure de restauration propre.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate section-anchor" id="business-model">
+        <div class="page-shell">
+          <div class="section-heading reveal"><span class="eyebrow">Modèle économique</span><h2>Business Model Canvas</h2><p>Une première architecture de création, de transmission et de captation de valeur, construite pour être testée sur le terrain.</p></div>
+          <div class="canvas-grid">
+            <article class="canvas-block reveal"><span>01</span><h3>Segments de clientèle</h3><ul><li>Étudiants de la FPK Khouribga</li><li>Snacks et points de restauration partenaires</li><li>Associations étudiantes comme relais</li></ul></article>
+            <article class="canvas-block value-block reveal"><span>02</span><h3>Proposition de valeur</h3><ul><li>Précommande rapide</li><li>Réduction du temps d’attente</li><li>Retrait direct chez le partenaire</li><li>Produits adaptés au budget étudiant</li><li>Anticipation de la demande pour les snacks</li></ul></article>
+            <article class="canvas-block reveal"><span>03</span><h3>Canaux</h3><ul><li>Application web mobile-first</li><li>QR Codes sur le campus</li><li>Instagram et associations</li><li>WhatsApp pour communication et support uniquement</li><li>Bouche-à-oreille</li></ul></article>
+            <article class="canvas-block reveal"><span>04</span><h3>Relations clients</h3><ul><li>Self-service</li><li>Confirmation de commande</li><li>Suivi : En attente → En préparation → Prête</li><li>Support et feedback continu</li></ul></article>
+            <article class="canvas-block revenue-block reveal"><span>05</span><h3>Sources de revenus</h3><ul><li>Frais de service de 1 à 2 MAD par commande validée</li><li>Commission vendeur comme piste future</li><li>Services premium B2B comme piste future</li></ul><em>Hypothèses MVP — revenus non encore réalisés</em></article>
+            <article class="canvas-block reveal"><span>06</span><h3>Ressources clés</h3><ul><li>Plateforme web et compétences techniques</li><li>Catalogue produits et commandes</li><li>Réseau de snacks partenaires</li><li>Marque FPK-EXPRESS</li></ul></article>
+            <article class="canvas-block reveal"><span>07</span><h3>Activités clés</h3><ul><li>Gestion de la plateforme et du catalogue</li><li>Intégration des partenaires</li><li>Transmission des commandes</li><li>Analyse, support et communication campus</li></ul></article>
+            <article class="canvas-block reveal"><span>08</span><h3>Partenaires clés</h3><ul><li>Snacks partenaires</li><li>Administration et écosystème FPK</li><li>Associations étudiantes</li><li>Hébergeurs cloud</li><li>Prestataires de paiement agréés à long terme</li></ul></article>
+            <article class="canvas-block reveal"><span>09</span><h3>Structure de coûts</h3><ul><li>Hébergement et maintenance</li><li>Communication campus</li><li>Support utilisateur</li><li>Frais de paiement futurs</li><li>Matériel promotionnel QR Code</li></ul></article>
+          </div>
+          <p class="section-footnote reveal">Le Business Model Canvas présente une première version du modèle économique. Il sera amélioré selon les retours des étudiants et des snacks partenaires.</p>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="feasibility">
+        <div class="page-shell">
+          <div class="section-heading reveal"><span class="eyebrow">Faisabilité</span><h2>Tester avec peu de moyens, apprendre rapidement</h2><p>Cinq dimensions structurent une expérimentation crédible et progressive.</p></div>
+          <div class="feasibility-grid">
+            <article class="feasibility-card reveal"><span class="card-index">01</span><h3>Faisabilité commerciale</h3><ul><li>Cible initiale : étudiants de la FPK Khouribga</li><li>Besoin : réduire l’attente et optimiser les pauses</li><li>Offre : précommande et retrait rapide</li><li>Alternatives : file classique, achat spontané, aucune anticipation</li><li>Validation : enquête exploratoire interne</li></ul></article>
+            <article class="feasibility-card reveal"><span class="card-index">02</span><h3>Faisabilité technique</h3><ul><li>Prototype MVP React / Vite côté interface</li><li>API basée sur FastAPI</li><li>Gestion des produits, commandes et utilisateurs</li><li>Architecture compatible avec le cloud</li><li>Conception mobile-first</li></ul></article>
+            <article class="feasibility-card legal-card reveal"><span class="card-index">04</span><h3>Faisabilité juridique</h3><ul><li>MVP académique en validation</li><li>Statut envisagé à long terme : SARL</li><li>Responsabilité alimentaire maintenue chez les partenaires</li><li>Paiement réel via un acteur agréé uniquement</li><li>Conditions d’utilisation et confidentialité avant commercialisation</li></ul></article>
+            <article class="feasibility-card reveal"><span class="card-index">05</span><h3>Faisabilité organisationnelle</h3><ul><li>Responsable produit et technique</li><li>Partenariats et intégration des vendeurs</li><li>Communication et croissance campus</li><li>Opérations et support utilisateur</li><li>Organisation évolutive selon les partenaires</li></ul></article>
+          </div>
+
+          <div class="calculator-shell reveal" aria-labelledby="calculator-title">
+            <div class="calculator-copy"><span class="calculator-index">03</span><span class="eyebrow light">Hypothèses pédagogiques MVP</span><h3 id="calculator-title">Simulateur de faisabilité financière</h3><p>Modifiez les hypothèses pour observer un scénario mensuel théorique. Aucun montant affiché ne correspond à un revenu réel.</p><svg class="calculator-illustration" aria-hidden="true" viewBox="0 0 300 140"><path d="M15 118h270"></path><rect x="35" y="75" width="35" height="43" rx="4"></rect><rect x="95" y="50" width="35" height="68" rx="4"></rect><rect x="155" y="30" width="35" height="88" rx="4"></rect><path d="m40 58 60-23 60 10 80-30"></path><circle cx="240" cy="15" r="7"></circle></svg></div>
+            <form class="calculator-form" id="financial-calculator">
+              <label>Frais de service par commande (MAD)<input id="service-fee" type="number" min="0" max="10" step="0.1" value="1.5" /></label>
+              <label>Commandes moyennes par jour<input id="daily-orders" type="number" min="0" max="1000" step="1" value="50" /></label>
+              <label>Jours d’activité par mois<input id="active-days" type="number" min="0" max="31" step="1" value="22" /></label>
+              <label>Coûts mensuels estimés (MAD)<input id="monthly-costs" type="number" min="0" max="100000" step="50" value="1200" /></label>
+            </form>
+            <div class="calculator-results" aria-live="polite">
+              <article><span>Recettes mensuelles théoriques</span><strong id="monthly-revenue">0 MAD</strong></article>
+              <article><span>Coûts mensuels estimés</span><strong id="cost-output">0 MAD</strong></article>
+              <article><span>Résultat mensuel théorique</span><strong id="monthly-result">0 MAD</strong></article>
+              <article><span>Seuil de rentabilité approximatif</span><strong id="break-even">0 commande / jour</strong></article>
+            </div>
+            <p class="disclaimer light calculator-disclaimer">Les résultats affichés constituent uniquement une simulation pédagogique basée sur des hypothèses modifiables. Ils ne représentent ni des revenus réels ni des bénéfices réels.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section payment-section" id="payment">
+        <div class="page-shell">
+          <div class="section-heading reveal"><span class="eyebrow">Paiement et portefeuille</span><h2>Paiement : une évolution progressive et sécurisée</h2><p>Le MVP évite toute complexité financière prématurée et avance par étapes clairement délimitées.</p></div>
+          <div class="payment-roadmap">
+            <article class="reveal"><span>Phase 1 — MVP</span><h3>Paiement au retrait</h3><p>L’étudiant règle directement sa commande chez le snack partenaire lors du retrait.</p></article>
+            <article class="reveal"><span>Phase 2 — Prototype de solde FPK</span><h3>Concept visuel uniquement</h3><p>Un portefeuille pédagogique peut illustrer une future expérience, sans dépôt, stockage ni transfert d’argent réel.</p></article>
+            <article class="reveal"><span>Phase 3 — Paiement mobile</span><h3>Partenariat agréé</h3><p>Une intégration avec MT Cash ou une solution agréée serait étudiée après validation du modèle, formalisation juridique et accord commercial.</p></article>
+          </div>
+          <div class="warning-card reveal"><svg class="icon"><use href="#icon-shield"></use></svg><p><strong>Point de vigilance :</strong> WhatsApp est uniquement un canal de support et de communication. Il ne doit pas être utilisé pour collecter, conserver ou transférer les fonds des utilisateurs.</p></div>
+        </div>
+      </section>
+
+      <section class="section alternate section-anchor" id="swot">
+        <div class="page-shell">
+          <div class="section-heading reveal"><span class="eyebrow">Analyse stratégique</span><h2>SWOT</h2><p>Une lecture équilibrée des capacités internes et de l’environnement externe.</p></div>
+          <div class="swot-grid">
+            <article class="swot-card strength reveal"><span>Interne • Positif</span><h3>Forces</h3><ul><li>MVP déjà développé</li><li>Problème étudiant concret</li><li>Interface mobile-first</li><li>Validation terrain exploratoire</li><li>Modèle simple à tester</li></ul></article>
+            <article class="swot-card weakness reveal"><span>Interne • À améliorer</span><h3>Faiblesses</h3><ul><li>Partenaires limités au lancement</li><li>Données historiques limitées</li><li>Budget communication restreint</li><li>Dépendance à la qualité des partenaires</li></ul></article>
+            <article class="swot-card opportunity reveal"><span>Externe • Positif</span><h3>Opportunités</h3><ul><li>Digitalisation des services universitaires</li><li>Extension à d’autres facultés</li><li>QR pickup et paiement mobile</li><li>Partenariats avec associations et administration</li></ul></article>
+            <article class="swot-card threat reveal"><span>Externe • Vigilance</span><h3>Menaces</h3><ul><li>Adoption lente des snacks</li><li>Concurrence indirecte des points de vente</li><li>Qualité de connexion internet</li><li>Fluctuation des prix alimentaires</li><li>Confiance des utilisateurs au lancement</li></ul></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="pestel">
+        <div class="page-shell">
+          <div class="section-heading reveal"><span class="eyebrow">Environnement macro</span><h2>PESTEL</h2><p>Six facteurs à surveiller pendant l’expérimentation et la croissance.</p></div>
+          <div class="pestel-grid">
+            <article class="mini-card reveal"><span>P</span><h3>Politique</h3><p>Soutien potentiel à l’innovation étudiante et à l’entrepreneuriat.</p></article>
+            <article class="mini-card reveal"><span>E</span><h3>Économique</h3><p>Budget étudiant limité ; importance d’un service à faible coût.</p></article>
+            <article class="mini-card reveal"><span>S</span><h3>Socioculturel</h3><p>Usage élevé du smartphone et besoin de gain de temps sur campus.</p></article>
+            <article class="mini-card reveal"><span>T</span><h3>Technologique</h3><p>Croissance des services digitaux, QR Codes et paiements mobiles.</p></article>
+            <article class="mini-card reveal"><span>E</span><h3>Écologique</h3><p>Réduction potentielle du gaspillage par une meilleure anticipation.</p></article>
+            <article class="mini-card reveal"><span>L</span><h3>Légal</h3><p>Protection des données, obligations alimentaires et cadre des paiements numériques.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section marketing-section section-anchor" id="marketing">
+        <div class="page-shell">
+          <div class="section-heading reveal"><span class="eyebrow light">Mise sur le marché</span><h2>Marketing Mix 4P</h2><p>Une stratégie campus lisible, accessible et orientée adoption.</p></div>
+          <div class="four-grid">
+            <article class="marketing-card reveal"><span>01</span><h3>Produit</h3><p>Plateforme de précommande et retrait rapide des snacks.</p></article>
+            <article class="marketing-card reveal"><span>02</span><h3>Prix</h3><p>Frais de service transparents de 1 à 2 MAD comme hypothèse MVP.</p></article>
+            <article class="marketing-card reveal"><span>03</span><h3>Place</h3><p>Web mobile-first, campus FPK, snacks partenaires et QR Codes.</p></article>
+            <article class="marketing-card reveal"><span>04</span><h3>Promotion</h3><p>Instagram, WhatsApp, affiches QR, associations, bouche-à-oreille et démonstrations campus.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="roadmap">
+        <div class="page-shell">
+          <div class="section-heading reveal"><span class="eyebrow">Trajectoire</span><h2>Roadmap entrepreneuriale</h2><p>Une progression de l’idée vers un service durable, pilotée par l’apprentissage terrain.</p></div>
+          <ol class="timeline">
+            <li class="complete reveal"><span>1</span><div><small>Étape validée</small><h3>Émergence de l’idée</h3></div></li>
+            <li class="complete reveal"><span>2</span><div><small>Étape validée</small><h3>Validation terrain</h3></div></li>
+            <li class="complete reveal"><span>3</span><div><small>Étape validée</small><h3>Planification et Business Model Canvas</h3></div></li>
+            <li class="complete reveal"><span>4</span><div><small>Étape validée</small><h3>Mobilisation des ressources</h3></div></li>
+            <li class="current reveal"><span>5</span><div><small>Position actuelle</small><h3>Lancement du MVP</h3></div></li>
+            <li class="next reveal"><span>6</span><div><small>Prochaine ambition</small><h3>Pérennisation et croissance</h3></div></li>
+          </ol>
+          <p class="section-footnote reveal">Le MVP est prêt pour démonstration, validation continue et amélioration selon les retours des étudiants et des snacks partenaires.</p>
+        </div>
+      </section>
+
+      <section class="section alternate section-anchor" id="team">
+        <div class="page-shell">
+          <div class="section-heading reveal"><span class="eyebrow">Équipe</span><h2>Une équipe orientée produit, technologie et terrain</h2><p>Des responsabilités claires, sans inventer de noms ni figer prématurément l’organisation.</p></div>
+          <div class="four-grid team-grid">
+            <article class="team-card reveal"><span>PT</span><h3>Responsable produit et technique</h3><p>Vision produit, architecture, expérience utilisateur et livraison du MVP.</p></article>
+            <article class="team-card reveal"><span>PV</span><h3>Partenariats et intégration des vendeurs</h3><p>Prospection, onboarding et qualité de la relation avec les snacks partenaires.</p></article>
+            <article class="team-card reveal"><span>CC</span><h3>Communication et croissance campus</h3><p>Acquisition, relais étudiants, contenu et activation des canaux campus.</p></article>
+            <article class="team-card reveal"><span>OS</span><h3>Opérations et support utilisateur</h3><p>Suivi du service, résolution des incidents et collecte des retours.</p></article>
+          </div>
+          <blockquote class="effectuation-quote reveal">FPK-EXPRESS se construit selon une logique effectuale : partir des compétences disponibles, tester à petite échelle, apprendre du terrain et ajuster progressivement le modèle.</blockquote>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="risks">
+        <div class="page-shell">
+          <div class="section-heading reveal"><span class="eyebrow">Pilotage</span><h2>Risques et réponses MVP</h2><p>Des réponses proportionnées au stade académique et à la taille de l’expérimentation.</p></div>
+          <div class="risk-table reveal" role="table" aria-label="Risques et réponses MVP">
+            <div class="risk-row risk-head" role="row"><strong role="columnheader">Risque</strong><strong role="columnheader">Réponse MVP</strong></div>
+            <div class="risk-row" role="row"><span role="cell">Faible adoption des snacks</span><p role="cell">Onboarding progressif avec un petit nombre de partenaires.</p></div>
+            <div class="risk-row" role="row"><span role="cell">Faible adoption des étudiants</span><p role="cell">QR Codes, ambassadeurs, démonstrations et communication campus.</p></div>
+            <div class="risk-row" role="row"><span role="cell">Erreurs de commande</span><p role="cell">Confirmation, suivi du statut et historique.</p></div>
+            <div class="risk-row" role="row"><span role="cell">Rupture de stock</span><p role="cell">Mise à jour du catalogue par le partenaire.</p></div>
+            <div class="risk-row" role="row"><span role="cell">Problèmes de paiement</span><p role="cell">Paiement au retrait durant la phase MVP.</p></div>
+            <div class="risk-row" role="row"><span role="cell">Données insuffisantes</span><p role="cell">Collecte progressive de feedback, KPI et amélioration continue.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="prototype section-anchor" id="prototype">
+        <div class="page-shell prototype-content reveal">
+          <span class="eyebrow light">Prototype MVP</span>
+          <h2>Découvrir le prototype FPK-EXPRESS</h2>
+          <p>Le dossier entrepreneurial présente la stratégie et la faisabilité du projet. Le prototype MVP démontre quant à lui le parcours de précommande, la gestion des commandes et l’expérience étudiant.</p>
+          <a class="button primary" href="#" data-mvp-link target="_blank" rel="noopener">Ouvrir le prototype MVP <svg class="icon"><use href="#icon-arrow"></use></svg></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell footer-grid">
+        <div><a class="brand footer-brand" href="#home"><img src="assets/logo-mark.svg" alt="" width="42" height="42" /><span><strong>FPK-EXPRESS</strong><small>Dossier Entrepreneurial Interactif</small></span></a><p>MVP académique développé dans le cadre du module Culture Entrepreneuriale.</p></div>
+        <div class="footer-links"><h2>Liens du projet</h2><a href="#" data-repository-link target="_blank" rel="noopener">Dépôt GitHub du prototype</a><a href="#" data-mvp-link target="_blank" rel="noopener">Prototype en ligne</a><button class="back-to-top" type="button">Retour en haut ↑</button></div>
+      </div>
+      <div class="page-shell footer-bottom"><span>© <span id="current-year"></span> FPK-EXPRESS</span><span>Conçu pour présenter, tester et apprendre.</span></div>
+    </footer>
+  </body>
+</html>

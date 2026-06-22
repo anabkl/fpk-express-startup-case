@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Symbole FPK-EXPRESS</title>
+  <rect width="48" height="48" rx="8" fill="#0e8b83"/>
+  <path d="M13 13h17v6H20v5h9v6h-9v7h-7V13Z" fill="#fffdf8"/>
+  <path d="M29 28h8m-4-4 4 4-4 4" fill="none" stroke="#f0c76d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
