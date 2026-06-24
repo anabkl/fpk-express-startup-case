@@ -1,7 +1,7 @@
 document.documentElement.classList.add("js");
 
 // Edit these two placeholders before publishing the final dossier.
-const MVP_PROTOTYPE_URL = "https://example.com/fpk-express-mvp";
+const MVP_PROTOTYPE_URL = "https://fpk-express.vercel.app";
 const PROTOTYPE_REPOSITORY_URL = "https://github.com/your-username/fpk-express";
 const THEME_STORAGE_KEY = "fpk-express-case-theme";
 
